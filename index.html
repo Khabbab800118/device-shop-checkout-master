@@ -6,16 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>device-shop-checkout-master</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
 </head>
 
 <body>
-    <main class="bg-[url(\resources\background-image.png) bg-gray-100">
+    <main class="bg-gray-100 p-5">
         <div class="my-20 flex items-center justify-center gap-3">
             <h3 class="text-3xl font-bold">Checkout</h3>
             <span class="font-bold text-sm bg-black text-white px-3 py-0.5 rounded-2xl">3 ITEMS</span>
         </div>
-        <section class="max-w-7xl m-auto mb-5 flex">
+        <section class="max-w-7xl m-auto flex">
             <!-- left side -->
             <div class="w-1/2 bg-gray-200 p-6 flex flex-col rounded-tl-2xl rounded-bl-2xl">
                 <!-- card -->
@@ -101,11 +100,12 @@
                 </div>
                 <!-- coupon button -->
                 <div class="flex gap-2 mb-5 mt-15">
-                    <input placeholder="Enter coupon code" type="text" name="" id="" class="w-2/3 p-4 bg-white rounded-xl">
+                    <input placeholder="Enter coupon code" type="text" name="" id=""
+                        class="w-2/3 p-4 bg-white rounded-xl">
                     <button class="w-1/3 bg-black text-white rounded-xl">Apply Coupon</button>
                 </div>
                 <!-- total bill -->
-                 <div class="grid gap-3">
+                <div class="grid gap-3">
                     <div class="flex justify-between">
                         <span>
                             Sub total
@@ -119,7 +119,7 @@
                             Tax
                         </span>
                         <span class="font-bold">
-                            $623.00 
+                            $623.00
                         </span>
                     </div>
                     <div class="flex justify-between">
@@ -130,17 +130,37 @@
                             $3220.00
                         </span>
                     </div>
-                 </div>
+                </div>
             </div>
 
             <!-- right side -->
-            <div class="w-1/2 p-6 bg-white rounded-tr-2xl rounded-br-2xl">
-                <h3>Contact Information</h3>
-                <form>
-                    <label for="name">First & Last name</label><br>
-                    <input placeholder="Enter first & last name" type="text" name="" id="name" class="border"><br>
-                    <label for="email">Email Address</label><br>
-                    <input placeholder="Enter email address" type="email" name="" id="email" class="border">
+            <div class="w-1/2 p-6 bg-white rounded-tr-2xl rounded-br-2xl flex flex-col gap-5">
+                <h3 class="font-bold text-xl">Contact Information</h3>
+                <form class="flex flex-col gap-8">
+                    <div>
+                        <label for="name">First & Last name</label><br>
+                        <input placeholder="    Enter first & last name" type="text" name="" id="name"
+                            class="h-12 w-full bg-gray-100 rounded-xl mt-2">
+                    </div>
+                    <div>
+                        <label for="email">Email Address</label><br>
+                        <input placeholder="    Enter email address" type="email" name="" id="email"
+                            class="h-12 w-full bg-gray-100 rounded-xl mt-2">
+                    </div>
+                    <div class="flex gap-2">
+                        <div class="w-1/2">
+                            <label for="country">Country</label><br>
+                            <input placeholder="    Enter Country Name" type="text" name="" id="country"
+                                class="bg-gray-100 w-full h-12 rounded-xl mt-2">
+                        </div>
+                        <div class="w-1/2>
+                            <label for=" postalcode">Postal Code</label><br>
+                            <input placeholder="    00270" type="number" name="" id="postalcode"
+                                class="bg-gray-100 w-2xs h-12 rounded-xl mt-2">
+                        </div>
+                    </div>
+                    <button class="text-white bg-black w-full h-12 rounded-xl text-xl">Continue</button>
+
                 </form>
             </div>
         </section>
