@@ -9,22 +9,24 @@
 </head>
 
 <body>
-    <main style="background-image: url('./resources/background-image@2x.png');"
-        class=" xl: bg-gray-100 p-5 bg-no-repeat bg-top bg-contain">
-        <div class="xl:my-20 flex items-center justify-center gap-3">
-            <h3 class="text-3xl font-bold text-white">Checkout</h3>
-            <span class="xl:font-bold text-sm bg-black text-white px-3 py-0.5 rounded-2xl">3 ITEMS</span>
+    <main style="background-image: url('../resources/background-image.png');"
+        class="bg-gray-100 p-5 bg-no-repeat bg-top bg-contain flex flex-col gap-3 lg:flex-none lg:py-20 lg:gap-0">
+        <!-- top side -->
+        <div class="flex items-center justify-center gap-3">
+            <h3 class="text-xl font-bold text-white lg:text-3xl">Checkout</h3>
+            <span class="font-bold text-xs bg-black text-white px-3 py-0.5 rounded-2xl lg:text-sm">3 ITEMS</span>
         </div>
-        <section class="xl:max-w-7xl m-auto flex">
+        <section class="w-100% m-auto flex flex-col lg:w-7xl lg:mt-15 lg:flex-row">
             <!-- left side -->
-            <div class="xl:w-1/2 bg-gray-200 p-6 flex flex-col rounded-tl-2xl rounded-bl-2xl">
+            <div
+                class="bg-gray-200 p-6 flex flex-col rounded-tl-xl rounded-tr-xl lg:w-1/2 lg:rounded-tl-2xl lg:rounded-bl-2xl lg:rounded-r-[0rem]">
                 <!-- card -->
-                <div class="xl:grid gap-5">
+                <div class="grid gap-5">
                     <div class="flex justify-between">
                         <!-- img+details -->
                         <div class="flex">
                             <!-- img -->
-                            <div class="bg-white px-8 py-2 rounded-xl w-32"><img src="./resources/Gold@2x.png" alt=""
+                            <div class="bg-white px-8 py-2 rounded-xl w-32"><img src="../resources/Gold.png" alt=""
                                     class="h-32"></div>
                             <!-- details -->
                             <div class="ml-4 flex flex-col justify-between">
@@ -34,7 +36,7 @@
                                 </div>
 
                                 <span class="flex">
-                                    <picture><img src="./resources/close-icon.svg" alt=""></picture>
+                                    <picture><img src="../resources/close-icon.svg" alt=""></picture>
                                     <span>1</span>
                                 </span>
                             </div>
@@ -43,15 +45,15 @@
                         <!-- price -->
                         <div class="flex flex-col items-end justify-between">
                             <span class="font-bold">$999.00</span>
-                            <picture><img src="./resources/close-icon.svg" alt=""></picture>
+                            <picture><img src="../resources/close-icon.svg" alt=""></picture>
                         </div>
                     </div>
                     <div class="flex justify-between">
                         <!-- img+details -->
                         <div class="flex">
                             <!-- img -->
-                            <div class="bg-white px-8 py-2 rounded-xl w-32"><img src="./resources/Apple-watchx2.png"
-                                    alt=""></div>
+                            <div class="bg-white px-12 py-8 rounded-xl w-32 lg:py-10"><img
+                                    src="../resources/Apple-watch.png" alt=""></div>
                             <!-- details -->
                             <div class="ml-4 flex flex-col justify-between">
                                 <div>
@@ -60,7 +62,7 @@
                                 </div>
 
                                 <span class="flex">
-                                    <picture><img src="./resources/close-icon.svg" alt=""></picture>
+                                    <picture><img src="../resources/close-icon.svg" alt=""></picture>
                                     <span>1</span>
                                 </span>
                             </div>
@@ -69,14 +71,15 @@
                         <!-- price -->
                         <div class="flex flex-col items-end justify-between">
                             <span class="font-bold">$999.00</span>
-                            <picture><img src="./resources/close-icon.svg" alt=""></picture>
+                            <picture><img src="../resources/close-icon.svg" alt=""></picture>
                         </div>
                     </div>
                     <div class="flex justify-between">
                         <!-- img+details -->
                         <div class="flex">
                             <!-- img -->
-                            <div class="bg-white px-6 py-6 rounded-xl w-32"><img src="./resources/iMac@2x.png" alt="">
+                            <div class="bg-white px-6 py-8 rounded-xl w-32 lg:py-8"><img src="../resources/iMac.png"
+                                    alt="">
                             </div>
                             <!-- details -->
                             <div class="ml-4 flex flex-col justify-between">
@@ -86,7 +89,7 @@
                                 </div>
 
                                 <span class="flex">
-                                    <picture><img src="./resources/close-icon.svg" alt=""></picture>
+                                    <picture><img src="../resources/close-icon.svg" alt=""></picture>
                                     <span>1</span>
                                 </span>
                             </div>
@@ -95,39 +98,39 @@
                         <!-- price -->
                         <div class="flex flex-col items-end justify-between">
                             <span class="font-bold">$999.00</span>
-                            <picture><img src="./resources/close-icon.svg" alt=""></picture>
+                            <picture><img src="../resources/close-icon.svg" alt=""></picture>
                         </div>
                     </div>
                 </div>
                 <!-- coupon button -->
-                <div class="xl:flex gap-2 mb-5 mt-15">
+                <div class="flex gap-2 mb-5 mt-15">
                     <input placeholder="Enter coupon code" type="text" name="" id=""
-                        class="xl:w-2/3 p-4 bg-white rounded-xl">
-                    <button class="xl:w-1/3 bg-black text-white rounded-xl">Apply Coupon</button>
+                        class="w-1/2 p-4 bg-white rounded-xl">
+                    <button class="w-1/2 bg-black text-white rounded-xl">Apply Coupon</button>
                 </div>
                 <!-- total bill -->
                 <div class="grid gap-3">
-                    <div class="xl:flex justify-between">
+                    <div class="flex justify-between">
                         <span>
                             Sub total
                         </span>
-                        <span class="xl:font-bold">
+                        <span class="font-bold">
                             $2597.00
                         </span>
                     </div>
-                    <div class="xl:flex justify-between">
+                    <div class="flex justify-between">
                         <span>
                             Tax
                         </span>
-                        <span class="xl:font-bold">
+                        <span class="font-bold">
                             $623.00
                         </span>
                     </div>
-                    <div class="xl:flex justify-between">
-                        <span class="xl:font-bold">
+                    <div class="flex justify-between">
+                        <span class="font-bold">
                             Total
                         </span>
-                        <span class="xl:font-bold">
+                        <span class="font-bold">
                             $3220.00
                         </span>
                     </div>
@@ -135,32 +138,32 @@
             </div>
 
             <!-- right side -->
-            <div class="xl:w-1/2 p-6 bg-white rounded-tr-2xl rounded-br-2xl flex flex-col gap-5">
-                <h3 class="xl:font-bold text-xl">Contact Information</h3>
-                <form class="xl:flex flex-col gap-8">
+            <div class="p-6 bg-white rounded-bl-xl rounded-br-xl flex flex-col gap-5 lg:w-1/2 lg:rounded-bl-[0] lg:rounded-tr-2xl">
+                <h3 class="font-bold text-xl">Contact Information</h3>
+                <form class="flex flex-col gap-8">
                     <div>
                         <label for="name">First & Last name</label><br>
                         <input placeholder="    Enter first & last name" type="text" name="" id="name"
-                            class="xl:h-12 w-full bg-gray-100 rounded-xl mt-2">
+                            class="h-12 w-full bg-gray-100 rounded-xl mt-2">
                     </div>
                     <div>
                         <label for="email">Email Address</label><br>
                         <input placeholder="    Enter email address" type="email" name="" id="email"
-                            class="xl:h-12 w-full bg-gray-100 rounded-xl mt-2">
+                            class="h-12 w-full bg-gray-100 rounded-xl mt-2">
                     </div>
-                    <div class="xl:flex gap-2">
-                        <div class="xl:w-1/2">
+                    <div class="flex flex-col gap-2">
+                        <div class="w-full">
                             <label for="country">Country</label><br>
                             <input placeholder="    Enter Country Name" type="text" name="" id="country"
-                                class="xl: bg-gray-100 w-full h-12 rounded-xl mt-2">
+                                class="bg-gray-100 w-full h-12 rounded-xl mt-2">
                         </div>
-                        <div class="xl:w-1/2>
+                        <div class="w-full>
                             <label for=" postalcode">Postal Code</label><br>
                             <input placeholder="    00270" type="number" name="" id="postalcode"
-                                class="xl: bg-gray-100 w-2xs h-12 rounded-xl mt-2">
+                                class="bg-gray-100 w-full h-12 rounded-xl mt-2">
                         </div>
                     </div>
-                    <button class="xl: text-white bg-black w-full h-12 rounded-xl text-xl">Continue</button>
+                    <button class="text-white bg-black w-full h-12 rounded-xl text-xl">Continue</button>
 
                 </form>
             </div>
